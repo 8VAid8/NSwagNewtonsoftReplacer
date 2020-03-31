@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSwagNewtonsoftReplacer", "NSwagNewtonsoftReplacer\NSwagNewtonsoftReplacer.csproj", "{C562A1A6-3E28-4F37-9E28-526900ABF57E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C562A1A6-3E28-4F37-9E28-526900ABF57E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C562A1A6-3E28-4F37-9E28-526900ABF57E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C562A1A6-3E28-4F37-9E28-526900ABF57E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C562A1A6-3E28-4F37-9E28-526900ABF57E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C0FC1F76-02BF-4066-89A4-922DE8DD50ED}
+	EndGlobalSection
+EndGlobal
