@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "NSwagNewtonsoftReplacer": {
+      "commandName": "Project",
+      "commandLineArgs": "\"C:\\FastReports\\CLOUD\\fastreport.cloud\\ui\\FastReport.Cloud.UI.Admin\\FastReport.Cloud.UI.Admin\\WebClient\\FastReport.Cloud.Admin.Client.Contracts.cs\" \"C:\\FastReports\\CLOUD\\fastreport.cloud\\ui\\FastReport.Cloud.UI.Admin\\FastReport.Cloud.UI.Admin\\WebClient\\FastReport.Cloud.Admin.Client.cs\""
+    }
+  }
+}
