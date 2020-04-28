@@ -26,7 +26,7 @@ namespace NSwagNewtonsoftReplacer
             string newNodeType = node.Type.ToString();
             foreach (var c in creationReplacementList)
             {
-                if (node.Type.ToString().Contains(c.Key))
+                if (node.ToString().Contains(c.Key))
                 {
                     newNodeType = node?.Type?.ToString().Replace(c.Key, c.Value);
                 }
