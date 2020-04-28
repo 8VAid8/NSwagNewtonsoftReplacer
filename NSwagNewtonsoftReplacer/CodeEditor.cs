@@ -12,16 +12,33 @@ using static Microsoft.CodeAnalysis.CSharp.SyntaxFactory;
 
 namespace NSwagNewtonsoftReplacer
 {
-    class CodeEditor
+    public class CodeEditor
     {
         /// The method calling the Syntax Rewriter
         public static void RepalaceNewton(string filePath)
         {
             var text = File.ReadAllText(filePath);
+            string newText = RepalaceNewtonInText(text);
+            // Exchanges the document in the solution by the newly generated document
+            using (TextWriter writer = new StreamWriter(filePath))
+            {
+                writer.Write(newText);
+            }
+        }
+
+        public static string RepalaceNewtonInText(string text)
+        {
             // Selects the syntax tree
             var syntaxTree = CSharpSyntaxTree.ParseText(text);
             var root = syntaxTree.GetRoot();
 
+            var editedRoot = RepalaceNewtonIn(root);
+
+            return editedRoot.ToFullString(); 
+        }
+
+        public static SyntaxNode RepalaceNewtonIn(SyntaxNode root)
+        {
             // add usings
             var compilationUnitSyntax = (CompilationUnitSyntax)(root);
             var json = QualifiedName(IdentifierName("System.Text"), IdentifierName("Json"));
@@ -38,11 +55,7 @@ namespace NSwagNewtonsoftReplacer
             // format document
             root = Formatter.Format(root, new AdhocWorkspace());
 
-            // Exchanges the document in the solution by the newly generated document
-            using (TextWriter writer = new StreamWriter(filePath))
-            {
-                root.WriteTo(writer);
-            }
+            return root;
         }
     }
 }
