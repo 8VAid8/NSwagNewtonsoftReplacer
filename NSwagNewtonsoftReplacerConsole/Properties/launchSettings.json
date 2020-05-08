@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "NSwagNewtonsoftReplacer": {
+      "commandName": "Project",
+      "commandLineArgs": ""
+    }
+  }
+}
